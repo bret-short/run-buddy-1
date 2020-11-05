@@ -16,4 +16,4 @@ https://lernantino.github.io/run-buddy/
 Made with ❤️ by Bret Short
 
 ## Contribution
-©️2019 Run Buddy, Inc
+©️2019 Run Buddy, Inc.
