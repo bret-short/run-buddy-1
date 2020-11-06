@@ -44,7 +44,11 @@ body {
     background-position: center;
     justify-content: center;
     flex-wrap: wrap;
-    
+    align-items: flex-start;
+  }
+
+  .hero-cta {
+    line-height: 1.2;
   }
 
   .hero-cta h2 {
@@ -88,7 +92,7 @@ body {
   /* HERO STYLES END */
 
   .section-title {
-    font-size: 55px;
+    font-size: 48px;
     color: #024e76;
     
     
@@ -134,7 +138,7 @@ body {
   }
 
   header nav ul il a {
-    margin: 0 30px;
+    padding: 1-px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
   }
@@ -358,4 +362,28 @@ body {
 
   section {
     padding: 60px;
+  }
+
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+  @media screen and (max-width: 980px) {
+    header h1 a {
+      /* this will be applied on any screen smaller than 980px */
+      
+    }
+  }
+
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      /* this will be applied on any screen between 768px and 575 px */
+      
+    }
+  }
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    header h1 {
+      /* this will be applied on any screen smaller than 575px */
+      
+    }
   }
