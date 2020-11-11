@@ -52,14 +52,15 @@ body {
     display: flex;
     background-size: cover;
     background-position: 80%;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    justify-content: space-evenly;
     background-attachment: fixed;
+    padding-bottom: 50px;
   }
 
   .hero-cta {
     line-height: 1.2;
+    width: 550px;
+    text-align: right;
   }
 
   .hero-cta h2 {
@@ -67,6 +68,7 @@ body {
     font-style: italic;
     font-size: 55px;
     color: var(--primary-color);
+    margin-top: 0;
   }
 
   .hero form h3 {
@@ -85,12 +87,14 @@ body {
   .hero-form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: rgb(252, 225, 56, 0.8);
-    padding: 20px;
+    padding: 15px;
     width: 40%;
     color: var(--secondary-color);
     border: solid 3px var(--secondary-color);
-    margin: 3.5%;
     border-radius: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .hero-form button {
@@ -193,14 +197,17 @@ body {
   .form-input {
     border: 1px solid var(--secondary-color);
     display: block;
-    padding: 7px 15px;
+    padding: 7px 10px;
+    padding-left: 10px;
     font-size: 16px;
     color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: rgba(255,255,255, 0.75);
-
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .form-input:focus {
@@ -226,9 +233,9 @@ body {
     list-style: none;
   }
 
-  header nav ul il a {
+  header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 1-px 15px;
+    padding: 1px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
   }
@@ -310,7 +317,7 @@ body {
 
   .trainers {
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -321,13 +328,19 @@ body {
     min-height: 300px;
     background-size: cover;
     display: flex;
-    padding: 15px;
+    /* padding: 15px; */
     align-items: flex-end;
     position: relative;
+    overflow: hidden;
   }
 
-  .trainer-img:hover {
-    opacity: 0.2;
+  .trainer:hover .trainer-img::after {
+    opacity: 1;
+  }
+
+  .trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
+
   }
 
   .trainer-img::after {
@@ -408,7 +421,6 @@ body {
 
   .section-title {
     font-size: 55px;
-    display: flex;
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
     margin-bottom: 35px;
@@ -421,7 +433,7 @@ body {
 
   /* REACH OUT STYLES START */
   .contact {
-    
+    width: 100%;
     background: var(--secondary-color);
   }
 
@@ -464,17 +476,21 @@ body {
   }
 
   .contact-form input, .contact-form textarea {
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid var(--secondary-color);
     display: block;
-    padding: 7px 15px;
+    padding: 7px 10px;
     font-size: 16px;
     color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
     background-color: rgba(255,255,255, 0.75);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
+
 
   .contact-form input:focus, .contact-form textarea:focus {
     background-color: rgba(255,255,255, 1);
@@ -532,11 +548,12 @@ body {
   }
 
   section {
-    padding: 60px;
+    padding: 60px 0px;
   }
 
   .services {
     background: var(--primary-color);
+    width: 100%;
   }
 
   .service-grid-wrapper {
